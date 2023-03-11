@@ -2,13 +2,13 @@
 
 const about = document.querySelector('#about')
 const contact = document.querySelector('#contact')
-const project = document.querySelector('#project')
+const writeup = document.querySelector('#writeup')
 const small = document.querySelector('#small')
 
 // edit contain 2
 const aboutContent = document.querySelector('#about-content')
 const contactContent = document.querySelector('#contact-content')
-const projectContent = document.querySelector('#project-content')
+const writeupContent = document.querySelector('#writeup-content')
 const smallContent = document.querySelector('#small-content')
 
 about.addEventListener('click', () => {
@@ -51,16 +51,16 @@ contact.addEventListener('click', () => {
 })
 
 // edit contain 3
-project.addEventListener('click', () => {
-  const ProjectBox = new WinBox({
-    title: 'My_project',
+writeup.addEventListener('click', () => {
+  const writeupBox = new WinBox({
+    title: 'Writeup',
     width: '400px',
     height: '400px',
     top: 150,
     right: 50,
     bottom: 50,
     left: 50,
-    mount: projectContent,
+    mount: writeupContent,
     onfocus: function () {
       this.setBackground('#00aa00')
     },
