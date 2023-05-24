@@ -3,13 +3,13 @@
 const about = document.querySelector('#about')
 const contact = document.querySelector('#contact')
 const writeup = document.querySelector('#writeup')
-const small = document.querySelector('#small')
+const certificates = document.querySelector('#Certificates')
 
 // edit contain 2
 const aboutContent = document.querySelector('#about-content')
 const contactContent = document.querySelector('#contact-content')
 const writeupContent = document.querySelector('#writeup-content')
-const smallContent = document.querySelector('#small-content')
+const certificatesContent = document.querySelector('#certificates-content')
 
 about.addEventListener('click', () => {
   const aboutBox = new WinBox({
@@ -70,16 +70,16 @@ writeup.addEventListener('click', () => {
   })
 })
 
-small.addEventListener('click', () => {
-  const SmallBox = new WinBox({
-    title: 'small_project',
+certificates.addEventListener('click', () => {
+  const certificatesBox = new WinBox({
+    title: 'certificates',
     width: '400px',
     height: '400px',
     top: 80,
     right: 50,
     bottom: 50,
     left: 50,
-    mount: smallContent,
+    mount: certificatesContent,
     onfocus: function () {
       this.setBackground('#00aa00')
     },
