@@ -72,10 +72,10 @@ writeup.addEventListener('click', () => {
 
 certificates.addEventListener('click', () => {
   const certificatesBox = new WinBox({
-    title: 'certificates',
+    title: 'Certificates',
     width: '400px',
     height: '400px',
-    top: 80,
+    top: 150,
     right: 50,
     bottom: 50,
     left: 50,
